@@ -1,0 +1,16 @@
+[submodule "riscv-gnu-toolchain"]
+	path = riscv-gnu-toolchain
+	url = https://github.com/riscv/riscv-gnu-toolchain
+[submodule "riscv-qemu"]
+	path = riscv-qemu
+	url = https://github.com/miet-riscv-workgroup/riscv-qemu
+	branch = 20170220.miet-board
+[submodule "riscv-nmon"]
+	path = riscv-nmon
+	url = https://github.com/frantony/riscv-nmon
+[submodule "fusesoc"]
+	path = fusesoc
+	url = https://github.com/olofk/fusesoc
+[submodule "riscv-soc-cores"]
+	path = riscv-soc-cores
+	url = https://github.com/open-design/riscv-soc-cores
