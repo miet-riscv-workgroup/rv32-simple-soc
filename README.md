@@ -78,3 +78,31 @@ $ cd riscv-soc-cores
 $ export PATH=$PATH:/opt/altera/13.1/quartus/bin
 $ fusesoc --cores-root cores/ build marsohod2-picorv32-wb-soc
 ```
+
+
+barebox
+-------
+
+### barebox: qemu simulation
+
+```
+$ cd barebox
+$ make erizo_generic_defconfig ARCH=riscv
+$ make ARCH=riscv CROSS_COMPILE=/opt/riscv/bin/riscv32-unknown-linux-gnu-
+
+
+$ /opt/riscv/bin/qemu-system-riscv32 -nographic -M erizo \
+         -bios barebox.bin \
+         -serial stdio -monitor none -trace file=/dev/null
+```
+
+### barebox: fpga board
+
+```
+$ cd barebox
+# ./scripts/nmon-loader barebox.erizo.nmon /dev/ttyUSB1 115200
+
+nmon> g 80000000
+
+nmon> q
+```

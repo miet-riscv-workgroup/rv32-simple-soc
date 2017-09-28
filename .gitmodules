@@ -14,3 +14,7 @@
 [submodule "riscv-soc-cores"]
 	path = riscv-soc-cores
 	url = https://github.com/open-design/riscv-soc-cores
+[submodule "barebox"]
+	path = barebox
+	url = https://github.com/frantony/barebox
+	branch = 20170929.riscv
