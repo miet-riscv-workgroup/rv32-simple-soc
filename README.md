@@ -1,6 +1,9 @@
 rv32-simple-soc
 ===============
 
+For building rv32-simple-soc from source please use Debian 9 "Stretch".
+See https://www.debian.org for details.
+
 ```
 $ sudo apt-get install git
 $ git clone --recursive https://github.com/miet-riscv-workgroup/rv32-simple-soc
