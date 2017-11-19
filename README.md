@@ -89,6 +89,8 @@ barebox
 ### barebox: qemu simulation
 
 ```
+$ sudo apt-get install lzop
+
 $ cd barebox
 $ make erizo_generic_defconfig ARCH=riscv
 $ make ARCH=riscv CROSS_COMPILE=/opt/riscv/bin/riscv32-unknown-linux-gnu-
