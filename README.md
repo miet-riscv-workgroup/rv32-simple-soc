@@ -23,7 +23,7 @@ $ cd riscv-gnu-toolchain
 $ sudo mkdir /opt/riscv
 $ sudo chown $USER /opt/riscv
 $ ./configure --prefix=/opt/riscv --with-arch=rv32i
-$ make linux
+$ make newlib
 ```
 
 
