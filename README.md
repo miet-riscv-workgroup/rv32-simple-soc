@@ -44,7 +44,7 @@ nmon
 
 ```
 $ cd riscv-nmon
-$ make nmon_picorv32-wb-soc_10MHz_9600.bin CROSS_COMPILE=/opt/riscv/bin/riscv32-unknown-linux-gnu-
+$ make nmon_picorv32-wb-soc_10MHz_9600.bin CROSS_COMPILE=/opt/riscv/bin/riscv32-unknown-elf-
 
 
 $ /opt/riscv/bin/qemu-system-riscv32 -nographic -M erizo \
@@ -93,7 +93,7 @@ $ sudo apt-get install lzop
 
 $ cd barebox
 $ make erizo_generic_defconfig ARCH=riscv
-$ make ARCH=riscv CROSS_COMPILE=/opt/riscv/bin/riscv32-unknown-linux-gnu-
+$ make ARCH=riscv CROSS_COMPILE=/opt/riscv/bin/riscv32-unknown-elf-
 
 
 $ /opt/riscv/bin/qemu-system-riscv32 -nographic -M erizo \
