@@ -31,7 +31,7 @@ QEMU
 ----
 
 ```
-$ sudo apt-get install python pkg-config zlib1g-dev libglib2.0-dev
+$ sudo apt-get install python pkg-config zlib1g-dev libglib2.0-dev libpixman-1-dev
 
 $ cd riscv-qemu
 $ ./configure --target-list=riscv32-softmmu,riscv64-softmmu --prefix=/opt/riscv
